@@ -75,4 +75,9 @@ void fnop(stack_t **head, unsigned int counter);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
+void fadd(stack_t **head, unsigned int counter);
+void fmul(stack_t **head, unsigned int counter);
+void fdiv(stack_t **head, unsigned int counter);
+void fsub(stack_t **head, unsigned int counter);
+
 #endif

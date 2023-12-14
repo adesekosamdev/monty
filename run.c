@@ -17,6 +17,9 @@ int run(char *data, stack_t **stack, unsigned int counter, FILE *file)
 				{"swap", fswap},
 				{"add", fadd},
 				{"nop", fnop},
+				{"sub", fsub},
+				{"div", fdiv},
+				{"mul", fmul},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;
