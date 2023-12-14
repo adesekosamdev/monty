@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -71,5 +72,7 @@ void fpop(stack_t **head, unsigned int counter);
 void fswap(stack_t **head, unsigned int counter);
 void fadd(stack_t **head, unsigned int counter);
 void fnop(stack_t **head, unsigned int counter);
-
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+void addnode(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
 #endif
