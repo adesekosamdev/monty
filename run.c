@@ -23,6 +23,8 @@ int run(char *data, stack_t **stack, unsigned int counter, FILE *file)
 				{"mod", f_mod},
 				{"pchar", fpchar},
 				{"pstr", fpstr},
+				{"rotl", frotl},
+				{"rotr", frotr},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;
