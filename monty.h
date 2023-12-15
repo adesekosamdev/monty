@@ -79,5 +79,8 @@ void fadd(stack_t **head, unsigned int counter);
 void fmul(stack_t **head, unsigned int counter);
 void fdiv(stack_t **head, unsigned int counter);
 void fsub(stack_t **head, unsigned int counter);
+void f_mod(stack_t **head, unsigned int counter);
+void fpchar(stack_t **head, unsigned int counter);
+void fpstr(stack_t **head, unsigned int counter);
 
 #endif

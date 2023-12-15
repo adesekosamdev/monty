@@ -7,13 +7,13 @@
 */
 void fswap(stack_t **head, unsigned int counter)
 {
-	stack_t *h;
+	stack_t *ptr;
 	int len = 0, temp;
 
-	h = *head;
-	while (h)
+	ptr = *head;
+	while (ptr)
 	{
-		h = h->next;
+		ptr = ptr->next;
 		len++;
 	}
 	if (len < 2)
@@ -24,8 +24,8 @@ void fswap(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	h = *head;
-	temp = h->n;
-	h->n = h->next->n;
-	h->next->n = temp;
+	ptr = *head;
+	temp = ptr->n;
+	ptr->n = ptr->next->n;
+	ptr->next->n = temp;
 }

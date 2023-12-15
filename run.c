@@ -20,6 +20,9 @@ int run(char *data, stack_t **stack, unsigned int counter, FILE *file)
 				{"sub", fsub},
 				{"div", fdiv},
 				{"mul", fmul},
+				{"mod", f_mod},
+				{"pchar", fpchar},
+				{"pstr", fpstr},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;

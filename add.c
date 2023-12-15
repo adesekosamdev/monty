@@ -7,13 +7,13 @@
 */
 void fadd(stack_t **head, unsigned int counter)
 {
-	stack_t *h;
+	stack_t *ptr;
 	int len = 0, temp;
 
-	h = *head;
-	while (h)
+	ptr = *head;
+	while (ptr)
 	{
-		h = h->next;
+		ptr = ptr->next;
 		len++;
 	}
 	if (len < 2)
@@ -24,9 +24,9 @@ void fadd(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	h = *head;
-	temp = h->n + h->next->n;
-	h->next->n = temp;
-	*head = h->next;
-	free(h);
+	ptr = *head;
+	temp = ptr->n + ptr->next->n;
+	ptr->next->n = temp;
+	*head = ptr->next;
+	free(ptr);
 }
